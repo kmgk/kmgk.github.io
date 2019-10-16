@@ -1,3 +1,12 @@
-.profile img {
-    border-radius: 50%;
+#profile img {
+    animation: rotate-maguro 10s linear infinite; 
+}
+
+@keyframes rotate-maguro {
+    from{
+        transform: roteta(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
