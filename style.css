@@ -3,10 +3,13 @@
 }
 
 @keyframes rotate-maguro {
-    from{
+    0%{
         transform: roteta(0deg);
     }
-    to{
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
         transform: rotate(360deg);
     }
 }
