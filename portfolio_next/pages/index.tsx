@@ -1,9 +1,20 @@
 import React, { FC } from 'react';
+import Head from 'next/head';
 import { LinkText } from '../components/LinkText';
 import { Section } from '../components/Section';
 import { SectionItem } from '../components/SectionItem';
 
 const Home: FC = () => (
+  <div>
+    <Head>
+      <title>Portfolio</title>
+      <meta property='og:title' content='Portfolio' />
+      <meta property='og:description' content='About Shuji Kamegaki' />
+      <meta
+        property='og:image'
+        content='https://i.gyazo.com/2bd72195d2ae4dc21169fd9ba97f05ca.png'
+      />
+    </Head>
     <div className='container mx-auto px-4'>
       <h1 className='title p-4'>Shuji Kamegaki</h1>
       <Section title='学歴'>
@@ -44,6 +55,7 @@ const Home: FC = () => (
         </SectionItem>
       </Section>
     </div>
+  </div>
 );
 
 export default Home;
