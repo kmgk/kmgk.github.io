@@ -14,6 +14,7 @@ const Home: FC = () => (
         property='og:image'
         content='https://i.gyazo.com/2bd72195d2ae4dc21169fd9ba97f05ca.png'
       />
+      <meta name='twitter:card' content='summary' />
     </Head>
     <div className='container mx-auto px-4'>
       <h1 className='title p-4'>Shuji Kamegaki</h1>
