@@ -4,8 +4,6 @@ on:
   push:
     branches:
     - master
-    paths:
-    - "portfolio_next/**"
 
 jobs:
   build-deploy:
@@ -26,24 +24,15 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
-    - name: cd
-      run: cd portfolio_next
-
     - name: install
-      run: yarn install --frozen-lockfile
+      run: cd portfolio_next && yarn install --frozen-lockfile
 
     - name: build
-      run: yarn build
-
-    - name: export
-      run: yarn export
-
-    - name: add nojekyll
-      run: touch ./out/.nojekyll
+      run: cd portfolio_next && yarn build
 
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./out
+        publish_dir: ./portfolio_next/out
         destination_dir: portfolio
