@@ -30,9 +30,16 @@ jobs:
     - name: build
       run: cd portfolio_next && yarn build
 
-    - name: deploy
+    - name: deploy_portfolio
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./portfolio_next/out
         destination_dir: portfolio
+
+    - name: deploy_introduction-of-information-processing
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./introduction-of-information-processing
+        destination_dir: introduction-of-information-processing
