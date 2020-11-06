@@ -27,6 +27,7 @@ const Home: FC = () => (
           <LinkText
             text='東京工業大学トライスロン部'
             link='https://tokyotechtri.wixsite.com/home'
+            external={true}
           />
           ）
         </SectionItem>
@@ -38,6 +39,7 @@ const Home: FC = () => (
           <LinkText
             text='カルチャ'
             link='https://apps.apple.com/jp/app/%E3%82%B2%E3%83%BC%E3%83%A0%E5%8F%8B%E9%81%94%E5%8B%9F%E9%9B%86%E3%82%A2%E3%83%97%E3%83%AA-%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3/id1475195473'
+            external={true}
           />
           」の開発。 使用技術：Flutter, Firebase
         </SectionItem>
@@ -46,13 +48,13 @@ const Home: FC = () => (
         </SectionItem>
         <SectionItem>
           株式会社エイチームフィナジー(2020/10~現在)：webサイト「
-          <LinkText text='ナビナビキャッシング' link='https://a-cashing.com/' />
+          <LinkText text='ナビナビキャッシング' link='https://a-cashing.com/' external={true} />
           」の開発。 使用技術：Ruby on Rails, typescript(React)
         </SectionItem>
       </Section>
       <Section title='リンク'>
         <SectionItem>
-          <LinkText text='Github' link='https://github.com/kmgk' />
+          <LinkText text='Github' link='https://github.com/kmgk' external={true} />
         </SectionItem>
       </Section>
     </div>
