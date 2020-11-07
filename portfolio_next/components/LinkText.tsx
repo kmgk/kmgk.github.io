@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Launch from '@material-ui/icons/Launch';
 
 interface LinkTextProps {
   text: string;
@@ -9,7 +10,7 @@ interface LinkTextProps {
 export const LinkText: FC<LinkTextProps> = ({ text, link, external }) => {
   return (
     <a className='text-blue-500' href={link} target={external ? '_blank' : ''}>
-      {text}
+      {text} {external && <Launch color='inherit' fontSize='small' />}
     </a>
   );
 };

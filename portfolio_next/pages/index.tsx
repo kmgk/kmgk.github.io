@@ -57,6 +57,17 @@ const Home: FC = () => (
           <LinkText text='Github' link='https://github.com/kmgk' external={true} />
         </SectionItem>
       </Section>
+      <Section title='成果物'>
+        <SectionItem>
+          <LinkText text='Ecomy' link='https://github.com/kmgk/flutter_hack_20' external={true} /> :
+          Flutter Hackathon 2020で作成したweb/モバイルアプリ。使用技術：Flutter, Firebase。
+          <LinkText
+            text='参加記'
+            link='https://kmgk.hatenablog.com/entry/2020/06/30/001248'
+            external={true}
+          />
+        </SectionItem>
+      </Section>
     </div>
   </div>
 );
