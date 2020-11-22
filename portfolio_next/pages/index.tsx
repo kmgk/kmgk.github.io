@@ -31,7 +31,9 @@ const Home: FC = () => (
           />
           ）
         </SectionItem>
-        <SectionItem>タイピング（e-typing、タイピング速度測定、Weather Typing）</SectionItem>
+        <SectionItem>
+          タイピング。よく遊ぶもの：e-typing、タイピング速度測定、Weather Typing
+        </SectionItem>
       </Section>
       <Section title='インターンシップ'>
         <SectionItem>
@@ -55,6 +57,9 @@ const Home: FC = () => (
       <Section title='リンク'>
         <SectionItem>
           <LinkText text='Github' link='https://github.com/kmgk' external={true} />
+        </SectionItem>
+        <SectionItem>
+          <LinkText text='ブログ' link='https://kmgk.dev' external={true} />
         </SectionItem>
       </Section>
       <Section title='成果物'>
